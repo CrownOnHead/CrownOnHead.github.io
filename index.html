@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CrownOnHead.github.io</title>
+		<meta charset = "utf-8">
+		<title>King Web Designs Survey</title>
 	</head>
 	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+		<h2>Web Page Design Survey.</h2>
+		
+		<!--Create a form method that uses post method and turns autocomplete for the form to on-->
+		<form method = "post" autocomplete = "on">
+		
+	
+		<a href="https://northstandard.com/">This is a link</a>
+		<img src="https://images.app.goo.gl/xpQ2Ck6UAri6wm5Z8" width="500" height="600">
+		
+		<!--A survey that is formed in a dropdown options from a detail on the summary of optional survey-->
+		<details>
+			<summary>Optional Survey</summary>
+			
+				<!--survey asks usrs to select the year they are in using radio buttons-->
+				<p>
+					<b><i>Please select the year are currently in:</i></b>
+					
+					<p>
+						<label>Not Yet In University
+							<input name = "year" type = "radio" value = "New">
+						</label>
+						
+						<label>Freshman
+							<input name = "year" type = "radio" value = "Freshman">
+						</label>
+						
+						<label>Sophomore
+							<input name = "year" type = "radio" value = "Sophomore">
+						</label>
+					</p>
+					
+					<p>
+						<label>Junior
+							<input name = "year" type = "radio" value = "Junior">
+						</label>
+						
+						<label>Senior
+							<input name = "year" type = "radio" value = "Senior">
+						</label>
+						
+						<label>Graduate
+							<input name = "year" type = "radio" value = "Graduate">
+						</label>
+					</p>
+				</p>
+		</details>
+		
+		<!--Submit button to proceed with post action, and clear to clear all selections and text-->
+		<p>
+			<input type = "submit" value = "Submit">
+			<input type = "reset" value = "Clear">
+		</p>	
+	</form>
+		
 	</body>
 </html>
