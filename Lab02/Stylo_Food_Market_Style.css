@@ -1,38 +1,127 @@
 body {
   font-family: "Lato", sans-serif;
 }
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+.header{
+	background-color: Black;
+	text-align: center;
+	height: 150px;
+	vertical-align: middle;
+	top: 0;
+	padding: 0px;
+	overflow-x: hidden;
+	width:100%;
+	color: white;
+	font-size: 30px;
 }
 
-.sidenav a {
+.block{
+	width: 50%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 28px;
+	font-family: "Lato", sans-serif;
+	color: black;
+	font-weight: bold;
+}
+.selectionBoxes{
+	width: 300px;
+	font-size: 28px; /* Increased text to enable scrolling */
+	padding: 20px;
+	background-color: #dbdbd9;
+	outline-style: solid;
+	text-align: center
+}
+
+.displayProduct{
+	background-color: #dbdbd9;
+	text-align: left;
+	vertical-align: middle;
+	top: 0;
+	padding: 0px;
+	overflow-x: hidden;
+	width: 500px;
+
+	
+}
+.sidenav {
+  height: 1450px;
+  width: 170px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 8px;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 158px;
+  
+}
+
+.sidenav button {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
+  background-color: black;
+  outline-style: solid;
+  outline-color: white;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav button.active {
+  color: #4CAF50;
+  font-weight: bold;
+}
+.footer{
+	background-color: black;
+	padding: 10px;
+	text-align: right;
+	height: 50px;
+	vertical-align: middle;
+	color: white;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  top: 1600px;
+ 
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+.sideNavContent {
+  margin-left: 170px; 
+  font-size: 28px; 
+  padding: 10px;
+  display: none;
+ position
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Courier New;
+  color: #0B2A3C;
+}
+
+.displayCart{
+	width: 300px;
+	font-size: 28px;
+	padding: 20px;
+	background-color: #dbdbd9;
+	outline-style: solid;
+	text-align: center
+	
+}
+

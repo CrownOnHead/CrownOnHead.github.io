@@ -8,19 +8,75 @@
 	</head>
 	
 	<body>
-
+	
+	<div class="header">
+		<h1 class="title">Stylo Food Market</h1>
+	</div>
+	
 	<div class="sidenav">
-		<a href="#about">About</a>
-		<a href="#services">Services</a>
-		<a href="#clients">Clients</a>
-		<a href="#contact">Contact</a>
+		<button class="sidenavLink" onclick="openInfo(event, 'Personal')">Personal Preferences</button>
+		<button class="sidenavLink" onclick="openInfo(event, 'Products')">Products For You</button>
+		<button class="sidenavLink" onclick="openInfo(event, 'Cart')">Shoping Cart</button>
+		
+	</div>
+	
+		
+	
+	<div id="Personal" class="sideNavContent">
+		<h2>Personal Preferences</h2>
+		<p>Please specify any dietary restrictions </p> 
+		<p>You will need to press Search then click on "Products For You"</p><br>
+		
+		<div class="selectionBoxes">
+			<input type="checkbox" name="restriction" value="lactoseFree">
+			<label for="lactoseFree">Lactose Free</label><br>
+		</div>
+		<br>
+		<div class="selectionBoxes">
+			<input type="checkbox" name="restriction" value="nutFree">
+			<label for="nutFree">Nut Free</label><br>
+		</div>
+		<br>
+		<div class="selectionBoxes">
+			<input type="checkbox" name="restriction" value="organic">
+			<label for="lactoseFree">Organic</label><br>
+		</div>
+		<br>
+		<button id="searchProduct" type="button" class="block" onclick="populateListProductChoices(this.id, 'displayProduct')">
+			Search.
+		</button>				
+		</select>	
+	</div>
+	
+	<div id="Products" class="sideNavContent">
+		<h2>Your Filtered Products</h2>
+		<p>We preselected products based on your restrictions</p>
+		<p>Please select products:</p>
+			
+		<div class="displayProduct" id="displayProduct"></div>
+		<br>
+		<button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+		</button>
 	</div>
 
-	<div class="main">
-		<h2>Sidebar</h2>
-			<p>This sidebar is of full height (100%) and always shown.</p>
+	<div id="Cart" class="sideNavContent">
+		<h2>Cart</h2>
+		<p>Your cart.</p>
+		<div class="displayCart" id="displayCart"></div>
+	</div>
+	
+	<div class="footer">
+		<footer>Designed by: Deacon Stylo<br>&#169 Stylo Designs</footer>
+	</div>
+		
+		
+
+	<script src="Food_Market_Sqript.js"></script>
+
 			
-		</div>
+
+
    
 	</body>
 </html> 
