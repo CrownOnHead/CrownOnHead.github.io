@@ -1,0 +1,291 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #EDF5E1
+}
+.header{
+	background-color: #5CDB95;
+	text-align: center;
+	height: 150px;
+	vertical-align: middle;
+	top: 0;
+	padding: 0px;
+	overflow-x: hidden;
+	width:100%;
+	color: #05386B;
+	font-size: 30px;
+}
+
+.block{
+	width: 50%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 28px;
+	font-family: "Lato", sans-serif;
+	color: black;
+	font-weight: bold;
+}
+
+.back{
+	width: 50%;
+	background-color: #FC4445;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 28px;
+	font-family: "Lato", sans-serif;
+	color: black;
+	font-weight: bold;
+}
+.selectionBoxes{
+	width: 300px;
+	font-size: 28px; 
+	padding: 20px;
+	background-color: #8EE4AF;
+	outline-style: solid;
+	text-align: center
+}
+
+img{
+	border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.productcontainer{
+	background-color: #8EE4AF;
+	text-align: middle;
+	vertical-align: middle;
+	top: 0;
+	padding: 0px;
+	overflow-x: hidden;
+	width: 500px;
+	border: solid;
+	border-color: #05386B;
+	font-family: "Lato", sans-serif;
+	font-size: 30px;
+	
+	
+	
+}
+
+input[type=checkbox] {
+    display: none;
+} 
+
+input[type=checkbox]:checked + label{
+   color: #05386B;
+   font-family: "Lato", sans-serif;
+	font-weight: bold;
+	text-decoration: underline
+}
+
+checkboxlabel {
+	border:1px solid #ccc;
+	padding:10px;
+	margin:0 0 10px;
+	display:block; 
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+label:hover {
+ background-color: #EDF5E1;
+ cursor:pointer;
+}
+.sidenav {
+height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #5CDB95;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #05386B;
+  display: block;
+  transition: 0.3s;
+}
+.dropdown-btn {
+	 padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+  
+}
+.dropdown-container {
+  display: none;
+  background-color: #8EE4AF;
+  padding-left: 8px;
+  font-size: 20px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #379683;
+}
+
+.menubtn .spanbtn{
+	position: absolute;
+  top: 60px;
+  left: 25px;
+  color: 05386B;
+  font-family: "Lato", sans-serif;
+  
+}
+
+.sidenav .closebtn {
+   position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+
+.sidenav button {
+ padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #05386B;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav button.active {
+ background-color: #379683;
+  color: white;
+}
+.footer{
+	background-color: #5CDB95;
+	padding: 10px;
+	text-align: right;
+	height: 50px;
+	vertical-align: middle;
+	color: #05386B;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  top: 3200px;
+ 
+}
+
+.sideNavContent {
+  margin-left: 170px; 
+  font-size: 28px; 
+  padding: 10px;
+  display: none;
+ position
+ 
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #0B2A3C;
+}
+
+input[type=email], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #0B2A3C;
+}
+
+input[type=number], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #0B2A3C;
+}
+
+input[type=date], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #0B2A3C;
+}
+
+.displayCart{
+	width: 300px;
+	font-size: 28px;
+	padding: 20px;
+	background-color: #5CDB95;
+	outline-style: solid;
+	text-align: center
+	
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #8EE4AF;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+

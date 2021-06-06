@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Stylo Food Market</title>
+		
+		<link rel = "stylesheet" type = "text/css" href = "Stylo_Food_Market_Style.css"> <!-- Link the style sheet-->
+	</head>
+	
+	<body>
+	
+	<div class="header">
+	
+		<h1 class="title">Stylo Food Market</h1>
+	
+	</div>
+	
+	<div class="menubtn">
+	
+		<span class="spanbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+		
+	</div>
+	
+	<div id="sidenav" class="sidenav">
+	
+	 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	 
+	<button class="dropdown-btn">Search
+		<i class="fa fa-caret-down"></i>
+	</button>
+		
+	<div class="dropdown-container">
+		<button class="sidenavLink" onclick="openInfo(event, 'Personal')" >Search By Dietary Restrictions</button>
+		<br>
+		<button class="sidenavLink" onclick="openInfo(event, 'categories')" >Search By Department</button>
+			
+	</div>
+		
+	<br>
+	<button class="sidenavLink" onclick="openInfo(event, 'Products')">Products For You</button>
+	
+	<br>
+		<button class="sidenavLink" onclick="openInfo(event, 'Cart')">Shopping Cart</button>	
+	</div>
+	
+		
+	
+	<div id="Personal" class="sideNavContent">
+		<h2>Personal Preferences</h2>
+		<p>Please specify any dietary restrictions </p> 
+		
+		<div class="selectionBoxes">
+			<input type="checkbox" name="restriction" value="lactoseFree" id="lactoseFree">
+			<label for="lactoseFree">Lactose Free</label><br>
+		</div>
+		<br>
+		<div class="selectionBoxes">
+			<input type="checkbox" name="restriction" value="nutFree" id="nutFree">
+			<label for="nutFree">Nut Free</label><br>
+		</div>
+		<br>
+		<div class="selectionBoxes">
+			<input type="checkbox" name="restriction" value="organic" id="Organic">
+			<label for="Organic">Organic</label><br>
+		</div>
+		<br>
+		<button id="searchProduct" type="button" class="block" onclick="populateListProductChoices(this.id, 'displayProduct')">
+			Search
+		</button>				
+		</select>	
+	</div>
+	
+	<div id="categories" class="sideNavContent">
+		<h2>Select Departments to Search By:</h2>
+		
+		
+		<div class="selectionBoxes">
+			<input type="checkbox" name="category" value="seaFood" id="seaFood">
+			<label for="seaFood">Sea Food</label><br>
+		</div>
+		<br>
+		<div class="selectionBoxes">
+			<input type="checkbox" name="category" value="bakery" id="bakery">
+			<label for="bakery">Bakery</label><br>
+		</div>
+		<br>
+		<div class="selectionBoxes">
+			<input type="checkbox" name="category" value="dairy" id="dairy">
+			<label for="dairy">Dairy</label><br>
+		</div>
+		<br>
+		
+		<div class="selectionBoxes">
+			<input type="checkbox" name="category" value="butcher" id="butcher">
+			<label for="butcher">Butcher</label><br>
+		</div>
+		<br>
+		
+		<div class="selectionBoxes">
+			<input type="checkbox" name="category" value="produce" id="produce">
+			<label for="produce">Produce</label><br>
+		</div>
+		<br>
+		<button id="searchProduct" type="button" class="block" onclick="populateListProductChoicesDepartment(this.id, 'displayProduct')">
+			Search
+		</button>				
+		</select>	
+	</div>
+	
+	<div id="Products" class="sideNavContent">
+		<h2>Your Filtered Products</h2>
+		<p>We preselected products based on your search criteria</p>
+		<p>Please select products:</p>
+			
+		<div class="displayProduct" id="displayProduct"></div>
+		<br>
+		<button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart
+		</button>
+	</div>
+
+	<div id="Cart" class="sideNavContent">
+		<h2>Cart</h2>
+		<p>Your cart:</p>
+		<div class="displayCart" id="displayCart"></div>
+		
+		<button id="addCart" type="button" class="block" onclick="openInfo(event, 'CheckOut')">
+		Check Out
+		</button>
+	</div>
+	
+	<div id="CheckOut" class="sideNavContent">
+	<h2>Your Personal Info</h2>
+	<br>
+		<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your first name">
+			<br>
+			
+		<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name">
+			<br>
+		<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Your email">
+		
+		<h2>Your payment Info</h2>
+
+		<input type="radio" id="credit" name="payment" value="credit">
+		<label for="credit">Credit</label><br>
+  
+		<input type="radio" id="debit" name="payment" value="debit">
+		<label for="debit">Debit</label><br>
+		
+		<br>
+		
+		<label for="cardNumber">Card Number:</label>
+			<input type="number" id="cardNumber" name="cardNumber" placeholder="Your Card Number">
+			
+		<label for="Expiry">Expiry Date:</label>
+			<input type="date" id="Expiry" name="Expiry">
+			<br>
+		<label for="CVC">CVC:</label>
+			<input type="number" id="CVC" name="CVC" placeholder="Your Card CVC">
+		
+		<h2>Your Billing Info</h2>
+		<label for="Address">Address:</label>
+			<input type="text" id="Address" name="Address" placeholder="Your Address">
+			<br>
+		<label for="City">City:</label>
+			<input type="text" id="City" name="City" placeholder="Your City">
+			<br>
+		<label for="postelCode">Postel Code:</label>
+			<input type="text" id="postelCode" name="postelCode" placeholder="Your Postel Code">
+			
+		<button id="pickUp" type="button" class="block" onclick="openInfo(event, 'Confromation')" >
+		Pick Up In Store
+		</button>
+		
+		<button id="Devliver" type="button" class="block" onclick="openInfo(event, 'Shipping')" >
+		Devliver To Me
+		</button>
+		
+		<button id="back" type="button" class="back" onclick="openInfo(event, 'Cart')">
+		Back To the Cart
+		</button>
+		
+	</div>
+	
+	<div id="Shipping" class="sideNavContent">
+		<h2>Your Address</h2>
+		<label for="Address">Address:</label>
+			<input type="text" id="Address" name="Address" placeholder="Your Address">
+			<br>
+		<label for="City">City</label>
+			<input type="text" id="City" name="City" placeholder="Your City">
+			<br>
+		<label for="Country">Country</label>
+			
+			<select name="Country" id="Country">
+				<option value="Canada">Canada</option>
+				<option value="iceland">Ice Land</option>
+			</select>
+		<br>
+		<label for="postelCode">Postel Code</label>
+			<input type="text" id="postelCode" name="postelCode" placeholder="Your Postel Code">
+		
+		<button id="Devliver" type="button" class="block" onclick="openInfo(event, 'Confromation')" >
+		Confirm Order
+		</button>
+				<button id="back" type="button" class="back" onclick="openInfo(event, 'CheckOut')">
+		Back to Checkout
+		</button>
+		
+		
+	</div>
+	
+	<div id="Confromation" class="sideNavContent">
+		<h2>Your Order has been placed, You will recive an email confromation!</h2>
+		<button id="back" type="button" class="back" onclick="openInfo(event, 'Products')">
+		Back To Shop
+		</button>
+	</div>
+	
+	<div class="footer">
+		<footer>Designed by: Deacon Stylo<br>&#169 Stylo Designs</footer>
+	</div>
+		
+		
+
+	<script src="Food_Market_Sqript.js"></script>
+
+			
+
+
+   
+	</body>
+</html> 
