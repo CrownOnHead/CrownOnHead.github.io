@@ -1,0 +1,200 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Module 4 Lab</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <nav class="navbar navbar-light text-black p-3 my-3 " style="background-color: #e3f2fd;" id="h1try">
+        <h1 class="h1try"><img src="images/HealthLogo.jpg" width="130" height="130"> Stylo Family Health Clinic</h1>
+    </nav>
+
+    <div class=" p-3 my-3 border bg-light">
+        <h1 class=""> About us</h1>
+        <p class="p-4 my-3" style="font-size: 25px">We are a small clinic located in Huntsville Ontario</p>
+        
+		<p style="font-size: 25px; padding-left: 1.5rem">Address: 130 Busy Street, L9W2D2, Huntsville, Ontario, Canada</p>
+    </div>
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    <table class="table table-info">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Services</h2></th>
+                <th scope="col"><h2>Discription</h2></th>
+            </tr>
+            </tr>
+        </thead>
+        <tbody>
+			<tr>
+                <td>Massage Therapy</td>
+                <td>Stress relieving deep tissue massage [$100/hour]</td>
+            </tr>
+            <tr>
+                <td>Dietitian</td>
+                <td>Receive persononalized diet plans and weekly check-ups with our 7 session plan [$240]</td>
+            </tr>
+            <tr>
+                <td>Diebetic Clinic</td>
+                <td>Receive persononalized diebetic plans and weekly check-ups with our 7 session plan [$240]</td>
+            </tr>
+            <tr>
+                <td>Orthopaedics</td>
+                <td>Receive persononalized orthopaedics. Consolation [$40]</td>
+            </tr>
+			 <tr>
+                <td>Physical Rehab</td>
+                <td>7 session Rehab starting at [$100]</td>
+            </tr>
+			 <tr>
+                <td>Blood Work</td>
+                <td>Blood work procesing [$10]</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1>Book an Appointment Here</h1>
+
+    <!-- Button trigger modal
+    We use the same button code from above, but now we can trigger a modal to appear.
+    The bootstrap tutorial includes many different types of modals that you can explore
+    https://getbootstrap.com/docs/5.0/components/modal/
+    -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Book Appointment
+    </button>
+<br>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Appointment Booking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Please Select a Service: 
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Dietitian
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Diebetic Clinic
+                        </label>
+                    </div>
+					<div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            Blood Work
+                        </label>
+                    </div>
+					<div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+                        <label class="form-check-label" for="flexRadioDefault5">
+                            Orthopaedics
+                        </label>
+                    </div>
+					<div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+                        <label class="form-check-label" for="flexRadioDefault6">
+                            Physical Rehab
+                        </label>
+                    </div>
+                </div>
+				<form>
+				 <h5 class="modal-title" id="exampleModalLabel">Select Appointment Date and Time</h5>
+					<div class="form-Control">
+						<div class="form-inline">
+							<label for="date" class="mr-sm-2">Date and time:</label>
+							<input type="datetime-local" class="form-control" id="date" placeholder="Date" name="date">
+						</div>
+					</div>
+				</form>
+				<form>
+				 <h5 class="modal-title" id="exampleModalLabel">Contact Information</h5>
+					<div class="form-inline">
+						<div class="col">
+							<label for="firstName" class="mr-sm-2">First Name:</label>
+							<input type="text" class="form-control" id="firstName" placeholder="Enter First Name" name="email">
+						</div>
+						<div class="col">
+						<label for="lastName" class="mr-sm-2">Last Name:</label>
+							<input type="text" class="form-control" placeholder="Enter Last Name" name="lastName">
+						</div>
+						<div class="col">
+						<label for="phone" class="mr-sm-2">Phone Number:</label>
+							<input type="tel" class="form-control" placeholder="Enter Phone Number" name="phone">
+						</div>
+					</div>
+				</form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    <h1>Meet the Physicians</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/Decon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Decon Stylo <br><br>Decon is a retired Army field medic <br> He specializes in Physical Rehab and Orthopaedics</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/Jenny.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Jenny VonTol<br><br>Jenny is our newest member to the clinc <br> She has 15 years experience with Dietitian and Diebetic plans</p>
+            </div>
+        </div>
+		<div class="card" style="width: 18rem;">
+            <img src="images/Vicky.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Vicky McCarthy <br><br>Vicky is our senior nurse practitioner with 30 years in the practice<br> They specializes in Blood Work</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
