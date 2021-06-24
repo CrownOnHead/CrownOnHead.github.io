@@ -1,15 +1,25 @@
+
 .navbar-light{
    background-color:white;
    height: 15%;
    outline-style:solid ;
    outline-color: #10D1B0;
-   font-size: 20px;
-   font-family: "Lucida Console";
+   font-size: 25px;
+   font-family: "Helvetica";
    color: black;
 }
+
+.collapse{
+    background-color: white;
+}
+
 .d-flex{
     position: absolute;
     right: 20px;
+}
+
+#mainBody{
+    padding-top: 150px;
 }
 .container-welcome{
     background-color:white;
@@ -20,6 +30,8 @@
    font-family: "Helvetica";
    color:Black;
 }
+
+
 .accordion{
     padding: 30px;
 }
@@ -45,6 +57,36 @@ h3{
     background-color: #93d9d0;
     font-family: "Helvetica";
     font-size: 20px;
+}
+
+#flexRadioDefault1,#flexRadioDefault2,#flexRadioDefault3,#flexRadioDefault4,#flexRadioDefault5{
+    background-color: #93d9d0;
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+#flexRadioDefault1:hover,#flexRadioDefault2:hover,#flexRadioDefault3:hover,#flexRadioDefault4:hover,#flexRadioDefault5:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+#flexRadioDefault6,#flexRadioDefault7,#flexRadioDefault8{
+    background-color: #6ab8d9;
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+#flexRadioDefault6:hover,#flexRadioDefault7:hover,#flexRadioDefault8:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+#flexRadioDefault9,#flexRadioDefault10{
+    background-color: #b7b6f5;
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+#flexRadioDefault9:hover,#flexRadioDefault10:hover{
+    background-color: rgb(160, 160, 160);
 }
 
 #surgeryTable{
@@ -144,4 +186,59 @@ button{
 #iconHeaders{
     width:45px;
     height: 45px;
+}
+
+#appointmentService{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.modal-title{
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.input-group{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#timeSelection{
+    padding-bottom: 30px;
+}
+
+#contactInfo{
+    padding-bottom: 30px;
+}
+
+#exampleModalLabel{
+    font-family: "Helvetica";
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+#subexampleModalLabel{
+    font-family: "Helvetica";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.alert{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#cardNumber:hover,#cardHoldersName:hover,#cvv:hover,#phoneNumber:hover,#lastName:hover,#firstName:hover,#inputGroupSelect01:hover,#dateInput:hover,#inputGroupSelect01:hover,#dateInputCard:hover,.form-check-input:hover{
+    background-color: #f0f0f0;
+}
+
+#bookingIcons{
+    height: 30px;
+    padding-right: 10px;
+    width: 45px; 
+}
+
+#closeBtn{
+    background-color: #999a9b;
 }

@@ -98,6 +98,7 @@ $(document).ready(function(){
     $('#alertCARDNAME').hide();
     $('#alertCARDNUMBER').hide();
     $('#alertCVV').hide();
+    $('#bookingSuccess').hide();
     // phone validation, it calls validatePhone
     // and also some feedback as an Alert + putting a value in the input that shows the format required
     // the "addClass" will use the class "error" defined in style.css and add it to the phone input
@@ -145,6 +146,13 @@ $(document).ready(function(){
         else{
             $('#alertCVV').hide();
         }
+
+        if ((validateName("firstName"))&&(validateName("lastName"))&&(validatePhone("phoneNumber"))&&(validateCardNumber("cardNumber"))&&(validateName("cardHoldersName"))&&(validateName("cvv"))){
+            $('#bookingSuccess').show();
+        }
+        else{
+            $('#bookingSuccess').hide();
+        }
     });
  
     $( "#dateInput" ).datepicker(
@@ -189,10 +197,24 @@ $(document).ready(function(){
         $("#cardNumber").removeClass("showInput");
     });
 
+    $("#inputGroupSelect01").on("mouseenter", function(){
+        $("#inputGroupSelect01").addClass("showInput");
+    });
+
+    $("#inputGroupSelect01").on("mouseleave", function(){
+        $("#inputGroupSelect01").removeClass("showInput");
+    });
+
     // https://jqueryui.com/tooltip/
     // The class "highlight" used here is predefined in JQuery UI
     // the message of the tooltip is encoded in the input (in the HTML file)
     $("#cardNumber").tooltip({
+        classes: {
+            "ui-tooltip": "highlight"
+        }
+    });
+
+    $("#inputGroupSelect01").tooltip({
         classes: {
             "ui-tooltip": "highlight"
         }
