@@ -127,8 +127,8 @@ thead{
 }
 .card-img-top{
     padding: 20px;
-    width: 550px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
 }
 
 .card{
@@ -241,4 +241,8 @@ button{
 
 #closeBtn{
     background-color: #999a9b;
+}
+
+.jumbotron{
+    background-color: #93d9d0;
 }

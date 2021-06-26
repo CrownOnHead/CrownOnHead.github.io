@@ -103,7 +103,8 @@ $(document).ready(function(){
     // and also some feedback as an Alert + putting a value in the input that shows the format required
     // the "addClass" will use the class "error" defined in style.css and add it to the phone input
     // The "error" class in style.css defines yellow background and red foreground
-    
+   
+
     $("#btnSubmit").on("click", function(){
         if (!validateName("firstName")){
             $('#alertFNAME').show();
