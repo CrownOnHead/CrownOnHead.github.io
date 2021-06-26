@@ -141,14 +141,14 @@ $(document).ready(function(){
             $('#alertCARDNAME').hide();
         }
 
-        if (!validateName("cvv")){
+        if (!validateCVV("cvv")){
             $('#alertCVV').show();
         }
         else{
             $('#alertCVV').hide();
         }
 
-        if ((validateName("firstName"))&&(validateName("lastName"))&&(validatePhone("phoneNumber"))&&(validateCardNumber("cardNumber"))&&(validateName("cardHoldersName"))&&(validateName("cvv"))){
+        if ((validateName("firstName"))&&(validateName("lastName"))&&(validatePhone("phoneNumber"))&&(validateCardNumber("cardNumber"))&&(validateName("cardHoldersName"))&&(validateCVV("cvv"))){
             $('#bookingSuccess').show();
         }
         else{
