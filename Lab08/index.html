@@ -1,0 +1,483 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+   
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="code/siteCode.js"></script>
+    <link href="styles/jquery-ui.css" rel="stylesheet" type="text/css">
+   
+  
+    <title>Module 5 Lab</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="images/RoyalDental.png" width="100" height="100" class="d-inline-block align-top" alt="Royal Dental Logo">
+            </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav navbar-nav" id="listNav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#firstStop">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Section2">| Book an Appointment |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Our Team |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mapSection">Visit Us |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutUs">About Us</a>
+            </li>
+            </ul>
+            <form class="d-flex" id="topBooking">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="backgroundFix">
+                   Book Appointment
+               </button>
+           </form>
+        </div>
+      </nav>
+
+    <!--Fluid Container for the body-->
+<div class="container-fluid" id="mainBody">
+    <div class="container-welcome">
+    <div class="container-fluid p-3 my-3 border" id="welcome">
+        <img src="images/RoyalDental.png" width="250" height="250" class="d-inline-block align-top" alt="Royal Dental Logo">
+        <h1><strong>Get The Royal Treatment</strong></h1>
+        <p id="firstStop">Welcome to the new Royal Dental Clinic. <br> We are a new dental service in <strong>Port Carling</strong> Ontario, sepecializing in all around dental care</p>
+      </div>
+    </div>
+    <!-- Modal -->
+
+   
+
+    <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <h3 id="firstSection">
+            <img src="icons/icons8-tooth-100.png"  class="d-inline-block align-top" alt="" id="iconHeaders">
+            <strong>Our Services</strong> 
+        </h3>
+        <div class="accordion-item">
+            <h4 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <img src="icons/icons8-dental-braces-100.png"  class="d-inline-block align-top" alt="" id="icon"> Orthodontics
+                </button>
+            </h4>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <table class="table" id="orthodonticsTable">
+                        <thead>
+                            <tr>
+                                <th scope="col"><h2>Service</h2></th>
+                                <th scope="col"><h2>Description</h2></th>
+                                <th scope="col"><h2>Price</h2></th>
+                            </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Braces Consultation</td>
+                                <td>Explore if you need braces and the options available to you with a consultation with one of our experts.</td>
+                                <td>$50 per consultation</td>
+                            </tr>
+                            <tr>
+                                <td>Invisalign</td>
+                                <td>Invisaline treatment including monthly checkups.</td>
+                                <td>$15,000</td>
+                            </tr>
+                            <tr>
+                                <td>Metal Braces</td>
+                                <td>Wired  metal braces treatment including monthly checkups.</td>
+                                <td>$10,000</td>
+                            </tr>
+                            <tr>
+                                <td>Bite Realignment Consultation</td>
+                                <td>Explore your bite realigment options with a consultation with one of our experts.</td>
+                                <td>$50 per consultation</td>
+                            </tr>
+                             <tr>
+                                <td>Bite Realignment</td>
+                                <td>Full bite realigment treatment.</td>
+                                <td>$10,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <img src="icons/icons8-dentist-female-100.png" class="d-inline-block align-top" alt="" id="icon">Oral Surgery
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <table class="table" id="surgeryTable">
+                        <thead>
+                            <tr>
+                                <th scope="col"><h2>Service</h2></th>
+                                <th scope="col"><h2>Description</h2></th>
+                                <th scope="col"><h2>Price</h2></th>
+                            </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wisdom Teeth Removal</td>
+                                <td>Consultation and removal of problematic wisdom teeth.</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td>Tooth Implants</td>
+                                <td>Consultation and implant of missing teeth</td>
+                                <td>$200 per tooth</td>
+                            </tr>
+                            <tr>
+                                <td>Gum Graft</td>
+                                <td>Consultation and correction of receding gum lines</td>
+                                <td>$6,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" id="Section2">
+                    <img src="icons/icons8-tooth-cleaning-kit-100.png" class="d-inline-block align-top" alt="" id="icon">Oral Hygiene
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <table class="table" id="hygieneTable">
+                        <thead>
+                            <tr>
+                                <th scope="col"><h2>Service</h2></th>
+                                <th scope="col"><h2>Description</h2></th>
+                                <th scope="col"><h2>Price</h2></th>
+                            </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basic Cleaning</td>
+                                <td>Basic dental cleaning</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td>Full Dental Cleaning</td>
+                                <td>Full dental cleaning including x-rays</td>
+                                <td>$400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="bookingBtn">
+        <h3>
+            <img src="icons/icons8-calendar-plus-100.png"  class="d-inline-block align-top" alt="" id="iconHeaders">
+            <Strong>Book an Appointment Here</Strong>
+            <a id="section3"></a>
+        </h3>
+        
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            
+            Book Appointment
+        </button>
+        
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><strong>Appointment Booking</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h5 class="modal-title" id="subexampleModalLabel">
+                    <img src="icons/icons8-calendar-plus-100.png"  class="d-inline-block align-top" alt="" id="bookingIcons"> 
+                    Select Appointment Date and Time
+                </h5>
+                <div class="modal-body" id= "appointmentService">
+                    <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Braces Consultation
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Invisalign
+                        </label>
+                    </div>
+					<div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            Metal Braces
+                        </label>
+                    </div>
+					<div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            Bite Realignment Consultation
+                        </label>
+                    </div>
+					<div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+                        <label class="form-check-label" for="flexRadioDefault5">
+                            Bite Realignment
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+                        <label class="form-check-label" for="flexRadioDefault6">
+                            Wisdom Teeth Removal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked>
+                        <label class="form-check-label" for="flexRadioDefault7">
+                            Tooth Implants
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8" checked>
+                        <label class="form-check-label" for="flexRadioDefault8">
+                            Gum Graft
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9" checked>
+                        <label class="form-check-label" for="flexRadioDefault9">
+                            Basic Cleaning
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10" checked>
+                        <label class="form-check-label" for="flexRadioDefault10">
+                            Full Dental Cleaning
+                        </label>
+                    </div>
+                </div>
+				<form>
+				 
+					
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Provider</label>
+                            <select class="form-select" id="inputGroupSelect01" title="You will need to select a provider to view bookable dates">
+                                <option selected>Choose:</option>
+                                <option value="1">Decon Stylo</option>
+                                <option value="2">Jenny VanTol</option>
+                                <option value="3">Vicky McCarthy</option>
+                            </select>
+                    </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Date:</span>
+                            <input type="text" placeholder="2021/02/23" id="dateInput">
+                        </div>
+                    <div class="input-group mb-3" id="timeSelection">
+                        <label class="input-group-text" for="inputGroupSelect01">Time:</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose:</option>
+                                <option value="1">10:00am</option>
+                                <option value="2">11:00am</option>
+                                <option value="3">12:00pm</option>
+                                <option value="4">1:00pm</option>
+                                <option value="5">2:00pm</option>
+                                <option value="6">3:00pm</option>
+                                <option value="7">4:00pm</option>
+                                <option value="8">5:00pm</option>
+                                <option value="9">6:00pm</option>
+                                <option value="10">7:00pm</option>
+                            </select>
+					</div>
+				</form>
+				<form> 
+				 <h5 class="modal-title" id="subexampleModalLabel">
+                    <img src="icons/icons8-new-contact-100.png"  class="d-inline-block align-top" alt="" id="bookingIcons">  
+                    Contact Information
+                </h5>
+					<div class="form-inline" id="contactInfo">
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">First Name:</span>
+                            <input type="text" class="form-control" aria-label="firstName" placeholder="John" id="firstName">
+                        </div>
+
+                        <div class="alert alert-danger" role="alert" id="alertFNAME">
+                            <strong>Please enter your first name.</strong>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Last Name:</span>
+                            <input type="text" class="form-control" placeholder="Doe" aria-label="lastName" id="lastName">
+                        </div>
+
+                        <div class="alert alert-danger " role="alert" id="alertLNAME">
+                            <strong>Please enter your last name.</strong>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Phone Number:</span>
+                            <input type="text" class="form-control" placeholder="(705)423-4213" aria-label="phoneNumber" id="phoneNumber">
+                        </div>
+                        <div class="alert alert-danger" role="alert" id="alertPHONE">
+                            <strong>Please follow enter a valid phone number.</strong>
+                        </div>
+					</div>
+				</form>
+                <form> 
+                    <h5 class="modal-title" id="subexampleModalLabel">
+                        <img src="icons/icons8-credit-card-80.png"  class="d-inline-block align-top" alt="" id="bookingIcons"> 
+                        Payment Information
+                    </h5>
+                       <div class="form-inline">
+                           <div class="input-group mb-3">
+                               <span class="input-group-text">Cardholder's Name:</span>
+                               <input type="text" class="form-control" placeholder="John Doe" aria-label="cardHoldersName" id="cardHoldersName">
+                           </div>
+
+                            <div class="alert alert-danger" role="alert" id="alertCARDNAME">
+                                <strong>Please enter your name.</strong>
+                            </div>
+   
+                           <div class="input-group mb-3">
+                               <span class="input-group-text">Card Number:</span>
+                               <input type="text" class="form-control" placeholder="1234 5678 9101 1121" aria-label="cardNumber" id="cardNumber" 
+                               title="We charge a $5 booking fee incase of missed appointment with out a 24 hour notice">
+                           </div>
+                            <div class="alert alert-danger" role="alert" id="alertCARDNUMBER">
+                                <strong>Please enter a valid card number.</strong>
+                            </div>
+                           <div class="input-group mb-3">
+                               <span class="input-group-text">Expiry Date:</span>
+                               <input type="text" placeholder="2021/02" id="dateInputCard">
+                               <span class="input-group-text">CVV:</span>
+                               <input type="text" class="form-control" placeholder="123" aria-label="cvv" id="cvv">
+                           </div>
+                           <div class="alert alert-danger" role="alert" id="alertCVV">
+                            <strong>Please enter a CVV.</strong>
+                        </div>
+                       </div>
+                   </form>
+
+                <div class="alert alert-success" role="alert" id="bookingSuccess">
+                    <strong>You Appointment Has Been Successfully Booked! <br> You Will Receive a Text Confirmation.</strong>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closeBtn">Close</button>
+                    <button type="button" class="btn btn-primary" id="btnSubmit">Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row justify-content-around" id="teamSection">
+        <h3>
+            <img src="icons/icons8-team-64.png"  class="d-inline-block align-top" alt="" id="iconHeaders">
+            <Strong>Meet the Team</Strong>
+        </h3>
+        <div class="card" style="width: 26rem;">
+            <img src="images/Decon.jpg" class="card-img-top" alt="Decon Stylo">
+            
+            <div class="card-body">
+                <p class="card-text"><strong>Decon Stylo</strong> <br><br>Decon is our <strong>senior</strong> dentist. <br> He has been in the field for <strong>30 years.</strong><br>After moving to Port Carling he had opened Royal Dental. </p>
+            </div>
+        </div>
+        <div class="card" style="width: 26rem;">
+            <img src="images/Jenny.jpg" class="card-img-top" alt="Jenny VonTol">
+            <div class="card-body">
+                <p class="card-text"><strong>Jenny VonTol</strong><br><br>Jenny is our <strong>newest </strong> member to the clinc.<br>She has had <strong>15 years</strong> of experience with with dental surgerys and orthodontics work.</p>
+            </div>
+        </div>
+		<div class="card" style="width: 26rem;">
+            <img src="images/Vicky.jpg" class="card-img-top" alt="Vicky McCarthy">
+            <div class="card-body">
+                <p class="card-text"><strong>Vicky McCarthy </strong><br><br>Vicky is our <strong>newest </strong>dentist.<br> They graduated from the <strong>University of Ottawa</strong> and are excited to serve the Port Carling community.<a id="mapSection"></a></p>
+                
+            </div>
+        </div>
+    </div>
+    <!--Google map-->
+<div id="mapDiv">
+    <div id="map-container-google-1" class="z-depth-1-half map-container">
+        <h3>
+            <img src="icons/icons8-map-marker-96.png"  class="d-inline-block align-top" alt="" id="iconHeaders">
+            <Strong>Come Visit Us</Strong>
+        </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703.8218870844496!2d-79.57830707074108!3d45.12050854500129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2af58172e2a9c9%3A0x549b641d68da3cb4!2s2%20James%20Bartleman%20Way%2C%20Port%20Carling%2C%20ON%20P0B%201J0!5e0!3m2!1sen!2sca!4v1624151806209!5m2!1sen!2sca" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>  
+
+</div>
+<div class="jumbotron text-center p-3 my-3 border" style="margin-bottom:0" id = "aboutUs">
+    <h3><strong>About Us</strong></h3>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 27rem;" id="footerText">
+            <div class="card-body">
+                <p class="card-text"><strong>Contact Us:</strong><br><br>
+                    <img src="icons/icons8-phone-100.png"  class="d-inline-block align-top" alt="" id="iconFooter"> 
+                    Phone:705-423-4213
+                    <br>
+                    <img src="icons/icons8-email-open-100.png"  class="d-inline-block align-top" alt="" id="iconFooter"> 
+                    Email:<br>royaldental@gmail.com
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 27rem;" id="footerText">
+            <div class="card-body">
+                <p class="card-text"><strong>Visit Us:</strong><br><br>
+                    <img src="icons/icons8-visit-100.png"  class="d-inline-block align-top" alt="" id="iconFooter"> 
+                    Address: <br> Port Carling, Ontario, P0B 1J0
+                </p>
+            </div>
+        </div>
+		<div class="card" style="width: 27rem;" id="footerText">
+            <div class="card-body">
+                <p class="card-text"><strong>Our Hours:</strong><br>
+                    <img src="icons/icons8-clock-100.png"  class="d-inline-block align-top" alt="" id="iconFooter"> 
+                    <br>
+                    Monday - Saturday: <br>10:00am - 7:00pm
+                    <br>
+                    Sunday: Closed
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

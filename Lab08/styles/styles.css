@@ -1,0 +1,248 @@
+
+.navbar-light{
+   background-color:white;
+   height: 15%;
+   outline-style:solid ;
+   outline-color: #10D1B0;
+   font-size: 25px;
+   font-family: "Helvetica";
+   color: black;
+}
+
+.collapse{
+    background-color: white;
+}
+
+.d-flex{
+    position: absolute;
+    right: 20px;
+}
+
+#mainBody{
+    padding-top: 150px;
+}
+.container-welcome{
+    background-color:white;
+    text-align: center;
+    padding:30px;
+    padding-bottom: 15px;
+   font-size: 20px;
+   font-family: "Helvetica";
+   color:Black;
+}
+
+
+.accordion{
+    padding: 30px;
+}
+.accordion-button{
+    font-family: "Helvetica";
+    font-size: 25px;
+
+}
+
+#icon{
+    height: 60px;
+    padding: 10px;
+    width: 60px;
+
+}
+h3{
+    font-family: "Helvetica";
+    font-size: 35px;
+    color:black;
+  
+}
+#orthodonticsTable{
+    background-color: #93d9d0;
+    font-family: "Helvetica";
+    font-size: 20px;
+}
+
+#flexRadioDefault1,#flexRadioDefault2,#flexRadioDefault3,#flexRadioDefault4,#flexRadioDefault5{
+    background-color: #93d9d0;
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+#flexRadioDefault1:hover,#flexRadioDefault2:hover,#flexRadioDefault3:hover,#flexRadioDefault4:hover,#flexRadioDefault5:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+#flexRadioDefault6,#flexRadioDefault7,#flexRadioDefault8{
+    background-color: #6ab8d9;
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+#flexRadioDefault6:hover,#flexRadioDefault7:hover,#flexRadioDefault8:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+#flexRadioDefault9,#flexRadioDefault10{
+    background-color: #b7b6f5;
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+#flexRadioDefault9:hover,#flexRadioDefault10:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+#surgeryTable{
+    background-color: #6ab8d9;
+    font-family: "Helvetica";
+    font-size: 20px;
+}
+
+thead{
+    background-color: white;
+    font-family: "Helvetica";
+}
+#hygieneTable{
+    background-color: #b7b6f5;
+    font-family: "Helvetica";
+    font-size: 20px;
+}
+
+#bookingBtn{
+    padding:30px;
+    padding-bottom: 15px;
+}
+
+.btn{
+    width: 300px;
+}
+.btn:hover{
+    background-color: #93d9d0;
+    font-weight: bold;
+}
+
+#teamSection{
+    padding:30px;
+    padding-bottom: 15px;
+    font-family: "Helvetica";
+    font-size: 35px;
+    color:black;
+}
+.card-img-top{
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+.card{
+    padding: 30px;
+    border-color: white;
+}
+
+.card-text{
+    font-family: "Helvetica";
+    font-size: 25px;
+    color:black;
+}
+
+h2{
+	font-size: 30px;
+    font-family: "Helvetica";
+}
+
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #10D1B0;
+    font-family: "Helvetica";
+    font-size: 20px;
+}
+.h1try {
+  font-size: 70px;
+}
+button{
+	color: #e3f2fd;
+}
+
+#footerText{
+    text-align: center;
+    background-color: #93d9d0;
+}
+#mapDiv{
+    padding: 30px;
+    text-align: left;
+}
+.map-container{
+    overflow:hidden;
+
+}
+.map-container iframe{
+    height:800px;
+    width:100%;
+}
+
+#iconFooter{
+    width:30px;
+    height: 30px;
+}
+
+#iconHeaders{
+    width:45px;
+    height: 45px;
+}
+
+#appointmentService{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.modal-title{
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.input-group{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#timeSelection{
+    padding-bottom: 30px;
+}
+
+#contactInfo{
+    padding-bottom: 30px;
+}
+
+#exampleModalLabel{
+    font-family: "Helvetica";
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+#subexampleModalLabel{
+    font-family: "Helvetica";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.alert{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#cardNumber:hover,#cardHoldersName:hover,#cvv:hover,#phoneNumber:hover,#lastName:hover,#firstName:hover,#inputGroupSelect01:hover,#dateInput:hover,#inputGroupSelect01:hover,#dateInputCard:hover,.form-check-input:hover{
+    background-color: #f0f0f0;
+}
+
+#bookingIcons{
+    height: 30px;
+    padding-right: 10px;
+    width: 45px; 
+}
+
+#closeBtn{
+    background-color: #999a9b;
+}
+
+.jumbotron{
+    background-color: #93d9d0;
+}

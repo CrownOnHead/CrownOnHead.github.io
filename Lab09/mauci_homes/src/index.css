@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@600&display=swap');
+.navbar-light{
+  background-color:rgb(252, 252, 252);
+  height: 15%;
+  outline-style:solid ;
+  outline-color: #B31B1C;
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+}
+
+.d-flex{
+  position: absolute;
+  right: 20px;
+}
+
+.introJumbo{
+  color: black;
+ 
+  padding-top: 150px;
+  width: 100%;
+  height:820px;
+  
+}
+.introSection{
+  color: black;
+  
+  padding-top: 2px;
+  width: 100%;
+  height:820px;
+}
+
+.introPhrase{
+  color: black;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 60px;
+  text-shadow: rgb(255, 255, 255) 0px 0px 34px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.customHouseSection{
+  color: black;
+  width: 100%;
+}
+
+.customHouseJumbo{
+   position:absolute;
+   width: 100%;
+   height:600px;
+   padding-left:10px;
+   padding-right:10px;
+ }
+
+.customHousesBody{
+  padding-top: 50px;
+  font-size: 70px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.img1{
+  
+  width:100%;
+  height:100%;
+  padding-top: 10px;
+}
+
+.imgSelect{
+  
+  width:100%;
+  height:100%;
+  padding-top: 10px;
+  backface-visibility: hidden;
+}
+
+.imgSelect:hover{
+  
+  opacity: 0.3;
+}
+
+.customHouse1{
+  
+  width:100%;
+  height:100%;
+  padding-top: 10px;
+  backface-visibility: hidden;
+}
+
+.customHouse1:hover{
+  opacity: 0.3;
+}
+
+.middle {
+position: absolute;
+  background-color: aqua;
+  padding-top: 300px;
+  left:1000px
+
+  
+
+ 
+}
+ 
+
+.customHousePictures{
+  height: 300px;
+}
+
+.customHousePicturesTop{
+  height: 300px;
+}
+
+.customHousePicturesBottom{
+  height: 300px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+
+.renovationSection{
+  color: black;
+  width: 100%;
+  padding-top: 650px;
+  position:absolute;
+}
+
+.renovationJumbo{
+   position:absolute;
+   width: 100%;
+   height:600px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top: 10px;
+ }
+
+.renovationBody{
+  padding-top: 50px;
+  font-size: 70px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.renovationPictures{
+  height: 600px;
+}
+
+.renovationPicturesTop{
+  height: 300px;
+}
+
+.renovationPicturesBottom{
+  height: 300px;
+}
+
+.communitySection{
+  color: black;
+  width: 100%;
+  padding-top: 1210px;
+  position:absolute;
+  
+}
+
+.communityJumbo{
+   position:absolute;
+ 
+   width: 100%;
+   height:320px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top: 60px;
+ }
+
+.communityBody{
+  padding-top: 50px;
+  font-size: 70px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.communityPictures{
+  height: 270px;
+}
+
+.communityPicturesTop{
+  height: 300px;
+}
+
+.customHousesIntroJumbo{
+  color: black;
+ 
+  padding-top: 165px;
+  width: 100%;
+  height:820px;
+}
+
+.customHousePhrase{
+  color: black;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 60px;
+  text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.customHouseTable{
+  width: 100%;
+  height: 280px;
+ 
+  padding-top: 50px;
+}
+.customHouseTablePictures{
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.bathroomRenovationIntroJumbo{
+  color: black;
+ 
+  padding-top: 160px;
+  width: 100%;
+  height:820px;
+}
+
+.bathroomRenovationPhrase{
+  color: black;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 60px;
+  text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.renovationBookingButton{
+  
+  position: absolute;
+  width: 25%;
+  height: 5%;
+  top: 700px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 60px;
+  
+
+}
+
+.bathroomRenovationTable{
+  width: 100%;
+  height: 800px;
+
+ 
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.bathroomRenovationTablePictures{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.customHouseViewPage{
+  padding-top: 150px;
+}
+
+.customHouseViewTable{
+
+  height:600px
+}
+.customHouseViewInfromation{
+
+  height: 600px;
+  text-align: left;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.houseinfo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+.mapDiv{
+  padding-top: 10px;
+  width:100%;
+  height: 600px;
+  font-family: 'Work Sans', sans-serif;
+  text-align: left;
+}
+.map{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%
+}
+
+
+.meetTheTeamSection{
+  color: black;
+  width: 100%;
+  padding-top: 150px;
+  
+}
+
+.meetTheTeamJumbo{
+   position:absolute;
+   width: 100%;
+   height:600px;
+  
+   padding-left:10px;
+   padding-right:10px;
+ 
+ }
+
+.meetTheTeamTable{
+  padding-top: 50px;
+  font-size: 70px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.RenovationBooking{
+  padding-top: 1200px;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+ 
+  
+}
+.bufferDiv{
+  padding-top: 600px;
+  background-color: white;
+}
+
+.renovationConsultationHeader{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  padding-top: 10px;
+}
+.formHeader{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+}
+
+p{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.Alert{
+  height: 50px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.teamTalkPage{
+  padding-top: 900px;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+ 
+  
+}
+.bufferDiv2{
+  padding-top: 1px;
+  background-color: white;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+.ourteam{
+  padding-top: 150px;
+}
+
+.bufferDivHouseTour{
+  padding-top: 10px;
+}
+
+.iconSub{
+  height:25px;
+  width: 35px;
+  padding-left: 10px;
+}
+
+.icon{
+  height:80px;
+  width: 80px;
+ 
+ 
+}
+
+.iconHead{
+  height:50px;
+  width: 60px;
+  padding-right: 10px;
+}
+
+.NavIcon{
+  padding-right: 10px;
+  padding-left: 10px;
+  height:30px;
+  width: 50px;
+}
+
+.language{
+  padding-top: 10px;
+}
