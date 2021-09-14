@@ -15,6 +15,7 @@ import HouseTourAppointment from "./HouseTourAppointment";
 import AboutUsPage from "./AboutUsPage";
 import TeamTalkPage from "./TeamTalkPage";
 import HomeFrench from "./HomeFrench";
+import HomeItalian from "./HomeItalian";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
@@ -81,6 +82,9 @@ function App() {
 
         <Route exact path="/HomeFrench">
          <HomeFrench></HomeFrench>
+        </Route>
+        <Route exact path="/HomeItalian">
+         <HomeItalian></HomeItalian>
         </Route>
       </Switch>
       </div>

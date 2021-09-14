@@ -14,11 +14,11 @@ import { Link } from 'react-router-dom';
 import icon1 from './images/Icons/custom house 2.png'
 import icon2 from './images/Icons/custom house 3.png'
 import icon3 from './images/Icons/community 1.png'
-const Home = () => {
+const HomeItalian = () => {
     return (  
         <div className="home">
             <div className="introSection">
-            <h1 className="introPhrase">We Turn Your Dream House Into <strong>Reality</strong></h1>
+            <h1 className="introPhrase">Trasformiamo la casa dei tuoi sogni in <strong>realtà</strong></h1>
                 <Jumbotron fluid className="introJumbo">
                     <img src={headerimage} 
                     alt="Header Image" 
@@ -26,7 +26,7 @@ const Home = () => {
                     height="650"
                     ></img>
                     <Link to='/HomeFrench'><Button variant="danger" className="language">Voir en Français</Button></Link>
-                    <Link to='/HomeItalian'><Button variant="danger" className="language">Visualizza in Italiano</Button></Link>
+                    <Link to='/Home'><Button variant="danger" className="language">View In English</Button></Link>
                     
                 </Jumbotron>
             </div>
@@ -63,7 +63,7 @@ const Home = () => {
                         
                         
                         </Col>
-                        <Col sm={4}><h1 className="customHousesBody">Custom Houses </h1><img src={icon1} className="icon" alt="Header Image"></img><h2>We build beautiful houses that will turn your dreams into a reality</h2></Col>
+                        <Col sm={4}><h1 className="customHousesBody">Case Personalizzate </h1><img src={icon1} className="icon" alt="Header Image"></img><h2>Costruiamo belle case che trasformeranno i tuoi sogni in realtà</h2></Col>
                     </Row>
                 </Container>
                 </Jumbotron>
@@ -73,7 +73,7 @@ const Home = () => {
                 <Jumbotron fluid className="renovationJumbo">
                 <Container fluid className="renovationTable">
                     <Row>
-                    <Col sm={4}><h1 className="renovationBody">Renovations</h1><img src={icon2} className="icon" alt="Header Image"></img><h2>We update your old rooms into ones that you love</h2></Col>
+                    <Col sm={4}><h1 className="renovationBody">Ristrutturazioni</h1><img src={icon2} className="icon" alt="Header Image"></img><h2>Aggiorniamo le tue vecchie stanze in quelle che ami</h2></Col>
                         <Col sm={8} className="renovationPictures">
                         <Row className="renovationPicturesTop">
                             <Col sm>
@@ -116,16 +116,16 @@ const Home = () => {
                         <Col sm={8} className="communityPictures">
                         <Row className="ourteam">
                             <Col sm>
-                            <Link to='/TeamTalkPage'><Button variant="danger" className="ourteam">Contact Our Team Now</Button></Link>
+                            <Link to='/TeamTalkPage'><Button variant="danger" className="ourteam">Contatta il nostro team ora</Button></Link>
                             </Col>
-                            <Col sm><Link to='/ExCustomerPage'><Button variant="danger" className="ourteam">Contact An Ex Customer Now</Button></Link></Col>
+                            <Col sm><Link to='/ExCustomerPage'><Button variant="danger" className="ourteam">Contatta subito un ex cliente</Button></Link></Col>
                         
                         </Row>
                         
                         
                         
                         </Col>
-                        <Col sm={4}><h1 className="customHousesBody">Community</h1><img src={icon3} className="icon" alt="Header Image"></img><h2>Contact our team</h2></Col>
+                        <Col sm={4}><h1 className="customHousesBody">Comunità</h1><img src={icon3} className="icon" alt="Header Image"></img><h2>Contatta il nostro team</h2></Col>
                     </Row>
                 </Container>
                 </Jumbotron>
@@ -136,4 +136,4 @@ const Home = () => {
     );
 }
  
-export default Home;
+export default HomeItalian;

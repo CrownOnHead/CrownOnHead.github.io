@@ -26,6 +26,7 @@ const HomeFrench = () => {
                     height="650"
                     ></img>
                     <Link to='/Home'><Button variant="danger" className="language">Voir En Anglaise</Button></Link>
+                    <Link to='/HomeItalian'><Button variant="danger" className="language">Visualizza in Italiano</Button></Link>
                     
                 </Jumbotron>
             </div>

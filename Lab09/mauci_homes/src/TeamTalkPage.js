@@ -142,7 +142,7 @@ const TeamTalkPage = () => {
                         
                     <InputGroup>
                         <InputGroup.Text>Email</InputGroup.Text>
-                        <FormControl id="inlineFormInputGrouplastName" placeholder="johndoe@gmail.com" type="text" value={email} onChange={(e) => emailvaladate(e.target.value)} />
+                        <FormControl id="inlineFormInputGrouplastName" placeholder="johndoe@gmail.com" value={email} onChange={(e) => emailvaladate(e.target.value)} />
                     </InputGroup>
                     <Alert show={show3} variant="danger" className="Alert">
                                 <p>
